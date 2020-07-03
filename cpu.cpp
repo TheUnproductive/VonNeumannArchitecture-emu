@@ -148,7 +148,6 @@ void cpu::cycle(){
 		case 0xE0:
 			printf("End\n");
 			x = false;
-			exit(0);
 		break;
 		
 		case 0xF0:
@@ -204,7 +203,7 @@ bool cpu::load(const char * filename)
 	{
 		for(int i = 0; i < lSize; ++i)
 			memory[i] = buffer[i];
-		while(x = true){
+		while(x == true){
 			cycle();
 		}
 	}
