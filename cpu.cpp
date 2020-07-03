@@ -11,7 +11,7 @@ void cpu::init(){
 	sr = 0;
 	x = true;
 	
-	for(int i; i < 128; i++){
+	for(int i; i < 16; i++){
 		R[i] = 0;
 	}	
 	
